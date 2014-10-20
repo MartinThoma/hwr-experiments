@@ -1,4 +1,4 @@
-data-source: archive/preprocessed/baseline-scale-and-shift-add-1
+data-source: preprocessed/baseline-scale-and-shift-add-1
 data-multiplication:
   - Multiply:
       - nr: 1

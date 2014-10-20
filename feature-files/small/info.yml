@@ -1,4 +1,4 @@
-data-source: archive/preprocessed/small-baseline
+data-source: preprocessed/small-baseline
 data-multiplication:
   - Multiply:
       - nr: 1

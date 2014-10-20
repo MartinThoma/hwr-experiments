@@ -1,4 +1,4 @@
-data-source: archive/preprocessed/baseline-30
+data-source: preprocessed/baseline-30
 data-multiplication:
   - Multiply:
       - nr: 1

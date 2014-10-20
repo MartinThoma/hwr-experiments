@@ -1,4 +1,4 @@
-data-source: archive/raw-datasets/2014-08-26-20-14-handwriting_datasets-raw.pickle
+data-source: raw-datasets/2014-08-26-20-14-handwriting_datasets-raw.pickle
 queue:
   - Remove_duplicate_time: null
   - Wild_point_filter:

@@ -1,4 +1,4 @@
-data-source: archive/preprocessed/c2
+data-source: preprocessed/c2
 data-multiplication:
   - Multiply:
       - nr: 1

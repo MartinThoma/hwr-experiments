@@ -1,4 +1,4 @@
-data-source: archive/preprocessed/baseline-stroke-connect-10px
+data-source: preprocessed/baseline-stroke-connect-10px
 data-multiplication:
   - Multiply:
       - nr: 1

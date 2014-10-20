@@ -1,4 +1,4 @@
-data-source: archive/preprocessed/baseline-no-centering
+data-source: preprocessed/baseline-no-centering
 data-multiplication:
   - Multiply:
       - nr: 1
