@@ -7,7 +7,7 @@ data-multiplication:
       - maximum: 30
       - step: 5
 features:
-  - Constant_Point_Coordinates:
+  - ConstantPointCoordinates:
       - strokes: 4
       - points_per_stroke: 20
       - fill_empty_with: 0

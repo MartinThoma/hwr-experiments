@@ -3,13 +3,13 @@ data-multiplication:
   - Multiply:
       - nr: 1
 features:
-  - Constant_Point_Coordinates:
+  - ConstantPointCoordinates:
       - strokes: 4
       - points_per_stroke: 20
       - fill_empty_with: 0
       - pen_down: false
-  - Re_curvature:
+  - ReCurvature:
       - strokes: 4
   - Ink: null
-  - Stroke_Count: null
-  - Aspect_ratio: null
+  - StrokeCount: null
+  - AspectRatio: null

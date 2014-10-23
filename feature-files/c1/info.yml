@@ -3,12 +3,12 @@ data-multiplication:
   - Multiply:
       - nr: 1
 features:
-  - Stroke_Count: null
+  - StrokeCount: null
   - Ink: null
   - AspectRatio: null
-  - Center_of_mass: null
-  - Constant_Point_Coordinates:
+  - CenterOfMass: null
+  - ConstantPointCoordinates:
       - strokes: 4
       - points_per_stroke: 20
-  - Stroke_intersections:
+  - StrokeIntersections:
       - strokes: 2
