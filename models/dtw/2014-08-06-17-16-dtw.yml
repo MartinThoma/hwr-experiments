@@ -6,7 +6,7 @@ preprocessing:
     - Connect_lines:
         - minimum_distance: 0.01
     - Douglas_peucker:
-        - EPSILON: 0.01
+        - epsilon: 0.01
     - Space_evenly_per_line:
         - kind: cubic
         - number: 100

@@ -12,7 +12,7 @@ queue:
   - StrokeConnect:
       - minimum_distance: 0.2
   - DouglasPeucker:
-      - EPSILON: 0.08
+      - epsilon: 0.08
   - SpaceEvenlyPerStroke:
       - kind: linear
       - number: 20

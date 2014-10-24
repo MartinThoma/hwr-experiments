@@ -6,7 +6,7 @@ queue:
       - max_height: 1.0
       - center: true
   - DouglasPeucker:
-      - EPSILON: 0.2
+      - epsilon: 0.2
   - SpaceEvenlyPerStroke:
       - kind: linear
       - number: 20
