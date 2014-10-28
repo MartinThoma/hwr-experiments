@@ -3,4 +3,4 @@ training: '{{nntoolkit}} train --newbob --learning-rate 0.1 --newbob-threshold 0
     {{testing}} < {{src_model}} > {{target_model}} 2>> {{target_model}}.log'
 model:
     type: mlp
-    topology: 160:500:500:369
+    topology: 160:500:500:500:500:369

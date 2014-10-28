@@ -1,6 +1,5 @@
 data-source: feature-files/baseline-20-times
-training: '{{nntoolkit}} train --newbob --epochs 1000 --learning-rate 0.1 --momentum 0.1 --hook=''!detl
-    test {{testing}},err=testresult_%e.txt'' {{training}} {{validation}}
+training: '{{nntoolkit}} train --newbob --learning-rate 0.1 --newbob-threshold 0.001 --newbob-decay 0.5 {{training}} {{validation}}
     {{testing}} < {{src_model}} > {{target_model}} 2>> {{target_model}}.log'
 model:
     type: mlp
