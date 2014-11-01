@@ -5,7 +5,7 @@ data-multiplication:
   - Rotate:
       - minimum: -30
       - maximum: 30
-      - num: 5
+      - num: 3
 features:
   - StrokeCount: null
   - ConstantPointCoordinates:
