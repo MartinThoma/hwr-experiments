@@ -1,0 +1,4 @@
+data-source: raw-datasets/2014-08-26-20-14-handwriting_datasets-raw.pickle
+queue:
+  - WeightedAverageSmoothing:
+      - theta: [1, 1, 1]
