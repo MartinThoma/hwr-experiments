@@ -1,0 +1,6 @@
+data-source: raw-datasets/2014-08-26-20-14-handwriting_datasets-raw.pickle
+queue:
+  - RemoveDuplicateTime: null
+  - SpaceEvenlyPerStroke:
+      - kind: linear
+      - number: 20
