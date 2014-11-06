@@ -1,0 +1,16 @@
+data-source: raw-datasets/2014-08-26-20-14-handwriting_datasets-raw.pickle
+queue:
+  - RemoveDuplicateTime: null
+  - ScaleAndShift:
+      - max_width: 1.0
+      - max_height: 1.0
+      - center: true
+  - DouglasPeucker:
+      - epsilon: 0.05
+  - SpaceEvenlyPerStroke:
+      - kind: cubic
+      - number: 20
+  - ScaleAndShift:
+      - max_width: 1.0
+      - max_height: 1.0
+      - center: true
