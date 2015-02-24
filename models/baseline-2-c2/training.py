@@ -25,6 +25,8 @@ logging.info("Remove last layer")
 with open("model-1.json") as f:
     model = json.load(f)
 model['layers'].pop()
+with open("model-1.json", "w") as f:
+    json.dump(model, f)
 
 # Make new layer
 os.chdir("../baseline-2-c2")
