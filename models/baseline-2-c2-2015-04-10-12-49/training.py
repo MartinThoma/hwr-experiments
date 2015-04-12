@@ -30,7 +30,7 @@ with open("model-1.json", "w") as f:
 
 # Make new layer
 os.chdir("../baseline-2-c2-2015-04-10-12-49")
-os.system("detl make mlp 500:500:369 > layer2.json")
+os.system("detl make mlp 500:500:374 > layer2.json")
 os.system("detl stack model-1.json layer2.json > model-2.json")
 os.system("rm layer2.json")
 
