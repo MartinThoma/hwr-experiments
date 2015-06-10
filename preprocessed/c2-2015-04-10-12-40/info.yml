@@ -1,4 +1,4 @@
-data-source: raw-datasets/2015-04-12-10-36-handwriting_datasets-raw.pickle
+data-source: raw-datasets/2015-05-31-13-43-handwriting_datasets-raw.pickle
 queue:
   - RemoveDuplicateTime: null
   - StrokeConnect:
