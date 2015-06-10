@@ -14,3 +14,14 @@ do the following:
    backup.py
 3. Delete files in preprocessing, features and model folder
 4. `$ train.py`: 30 minutes (eventually multiple times for SLP)
+
+## Add new symbols
+
+See "update existing classifier", but with modifications:
+
+1. adjust the model files (number of output neurons)
+2. Adjust the data source (look in hwr-experiments/raw-datasets)
+
+## After new training
+
+1. Run `$ test.py -n 3` (should be less than 5%)
