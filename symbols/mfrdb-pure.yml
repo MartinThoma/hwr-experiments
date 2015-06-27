@@ -1,0 +1,105 @@
+- {latex: '0'}
+- {latex: '1'}
+- {latex: '2'}
+- {latex: '3'}
+- {latex: '4'}
+- {latex: '5'}
+- {latex: '6'}
+- {latex: '7'}
+- {latex: '8'}
+- {latex: '9'}
+- {latex: 'A'}
+# - {latex: '\alpha'}  # only 7 recordings
+# - {latex: '\arcsin'}  # only 8 recordings
+- {latex: 'a'}
+- {latex: 'B'}
+# - {latex: '\beta'}  # only 1 recording
+- {latex: 'b'}
+- {latex: 'C'}
+# - {latex: '\cos'}  # only 40 recordings
+# - {latex: 'cotg'}
+- {latex: '\times'}
+- {latex: 'c'}
+# - {latex: 'D'}  # only 1 recording
+- {latex: '\cdot'}
+# - {latex: '\mathrm{d}t'}  # only 2 recordings
+- {latex: 'd'}
+# - {latex: '\mathrm{d}x'}  # only 3 recordings
+- {latex: 'E'}
+- {latex: 'e'}
+- {latex: 'F'}
+- {latex: '\frac{}{}'}
+- {latex: 'f'}
+- {latex: 'G'}
+- {latex: '\geq'}
+- {latex: '>'}
+- {latex: 'g'}
+- {latex: 'H'}
+- {latex: 'h'}
+- {latex: 'I'}
+- {latex: '\infty'}
+- {latex: '\int'}
+# - {latex: '\in'}  # only 1 recording
+- {latex: 'i'}
+# - {latex: 'J'}  # only 5 recordings
+- {latex: 'j'}
+# - {latex: '\kappa'}  # only 5 recordings
+# - {latex: 'K'}  # only 5 recordings
+- {latex: 'k'}
+- {latex: 'L'}
+- {latex: '['}
+- {latex: '\leq'}
+- {latex: '<'}
+- {latex: '\lim'}
+# - {latex: '\ln'}  # only 12 recordings
+# - {latex: '\log'}  # only 26 recordings
+- {latex: 'l'}
+- {latex: 'M'}
+- {latex: 'm'}
+- {latex: '\nabla'}
+- {latex: 'N'}
+- {latex: 'n'}
+- {latex: 'o'}
+- {latex: '\partial'}
+- {latex: 'P'}
+- {latex: '\pi'}
+- {latex: '\prod'}
+- {latex: 'p'}
+- {latex: 'q'}
+- {latex: 'R'}
+- {latex: '\rightarrow'}
+- {latex: ']'}
+- {latex: '\sqrt{}'}
+- {latex: 'r'}
+- {latex: 'S'}
+# - {latex: '\sin'}  # only 21 recordings
+- {latex: '/'}
+- {latex: '\star'}
+- {latex: '\sum'}
+- {latex: 's'}
+- {latex: 'T'}
+#- {latex: 'tg'}
+- {latex: 't'}
+- {latex: 'U'}
+- {latex: 'u'}
+- {latex: 'V'}
+- {latex: '|'}
+- {latex: 'v'}
+- {latex: 'X'}
+- {latex: '='}
+- {latex: '-'}
+- {latex: ','}
+- {latex: '!'}
+# - {latex: '.'}
+# - {latex: ''''}  # only 23 recordings
+- {latex: '('}
+- {latex: ')'}
+- {latex: '\{'}
+- {latex: '\}'}
+- {latex: '\pm'}
+- {latex: '+'}
+- {latex: 'x'}
+- {latex: 'Y'}
+- {latex: 'y'}
+- {latex: 'Z'}
+- {latex: 'z'}
