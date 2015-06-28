@@ -29,8 +29,8 @@
 - {latex: '\cos'}
 - {latex: '\neq'}
 - {latex: '\leq'}
-- {latex: '\lt'}
+- {latex: '<'}
 - {latex: '='}
 - {latex: '('}
 - {latex: ')'}
-- {latex: '\sqrt'}
+- {latex: '\sqrt{}'}

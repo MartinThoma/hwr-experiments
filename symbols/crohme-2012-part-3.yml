@@ -44,7 +44,7 @@
 - {latex: '\ldots'}
 - {latex: '\neq'}
 - {latex: '\leq'}
-- {latex: '\lt'}
+- {latex: '<'}
 - {latex: '\geq'}
 - {latex: '='}
 - {latex: '\rightarrow'}
@@ -56,7 +56,7 @@
 - {latex: '\}'}
 - {latex: '['}
 - {latex: ']'}
-- {latex: '\sqrt'}
+- {latex: '\sqrt{}'}
 - {latex: '!'}
 - {latex: 'X'}
 - {latex: 'Y'}
