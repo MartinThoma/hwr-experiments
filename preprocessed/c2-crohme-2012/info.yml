@@ -1,4 +1,4 @@
-data-source: raw-datasets/crohme-2011-part-2-combined.pickle
+data-source: raw-datasets/crohme-2012-training.pickle
 queue:
   - RemoveDuplicateTime: null
   - StrokeConnect:
