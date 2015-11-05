@@ -1,0 +1,23 @@
+training:
+    epochs: 1000
+    learning-rate: 0.1
+    momentum: 0.1
+    source: {{src_model}}
+    output: {{target_model}}
+model:
+    - name: 'data-source'
+      type: data-source
+      param:
+            training_source: 'feature-files/baseline-17-points'
+            testing_source: 'feature-files/baseline-17-points'
+            validation_source: 'feature-files/baseline-17-points'
+    - name: 'H1'
+      type: dense
+      input: 'data-source'
+      param:
+        num_units: 500
+    - name: 'out'
+      type: softmax
+      input: 'H1'
+      param:
+        num_units: 369
