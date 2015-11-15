@@ -25,13 +25,13 @@ logging.info("Remove last layer")
 with open("model-1.json") as f:
     model = json.load(f)
 model['layers'].pop()
-with open("model-1.json", "w") as f:
-    json.dump(model, f)
 
 # Make new layer
 os.chdir("../baseline-2-c2")
-os.system("detl make mlp 500:500:369 > layer2.json")
-os.system("detl stack model-1.json layer2.json > model-2.json")
+with open("model-1mod.json", "w") as f:
+    json.dump(model, f)
+os.system("detl make mlp 500:500:378 > layer2.json")
+os.system("detl stack model-1mod.json layer2.json > model-2.json")
 os.system("rm layer2.json")
 
 logging.info("Train it")
