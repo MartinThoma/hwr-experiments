@@ -1,7 +1,7 @@
-data-source: feature-files/c2
+data-source: feature-files/c3
 training: '{{nntoolkit}} train --epochs 1000 --learning-rate 0.1 --momentum 0.1 --print-errors
     {{training}} {{validation}}
     {{testing}} < {{src_model}} > {{target_model}} 2>> {{target_model}}.log'
 model:
     type: mlp
-    topology: 167:500:378
+    topology: 887:1000:369

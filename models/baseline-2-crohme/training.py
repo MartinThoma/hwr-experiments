@@ -17,7 +17,7 @@ logging.basicConfig(format='%(asctime)s %(levelname)s %(message)s',
 logging.info("Make model with one hidden layer")
 os.chdir("../baseline-1-crohme")
 if not os.path.isfile("model-1.json"):
-    os.system("train.py")
+    os.system("hwrt train")
 shutil.copyfile("model-1.json", "../baseline-2-crohme/model-1.json")
 os.chdir("../baseline-2-crohme")
 
@@ -35,4 +35,4 @@ os.system("detl stack model-1.json layer2.json > model-2.json")
 os.system("rm layer2.json")
 
 logging.info("Train it")
-os.system("train.py")
+os.system("hwrt train")

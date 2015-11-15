@@ -5,7 +5,7 @@ import time
 from collections import defaultdict
 
 # hwrt modules
-from hwrt import HandwrittenData
+from hwrt import handwritten_data
 from hwrt import utils
 from hwrt import data_analyzation_metrics
 from hwrt import geometry

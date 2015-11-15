@@ -1,4 +1,4 @@
-data-source: raw-datasets/2014-08-26-20-14-handwriting_datasets-raw.pickle
+data-source: raw-datasets/2015-11-15-filtered-raw.pickle
 queue:
   - RemoveDuplicateTime: null
   - ScaleAndShift:
