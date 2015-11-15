@@ -10,16 +10,18 @@ difference in preprocessing, features or model and no new symbols), you should
 do the following:
 
 1. `$ backup.py`:  30 minutes
-2. Update preprocessing data source to new file which was just created by
+2. Update `hwrt/misc/latex2writemathindex.csv`
+3. Update preprocessing data source to new file which was just created by
    backup.py
-3. Delete files in preprocessing, features and model folder
-4. `$ train.py`: 30 minutes (eventually multiple times for SLP)
+4. `hwrt filter_dataset -s ~/GitHub/hwrt/hwrt/misc/symbols.yml -r ~/GitHub/hwr-experiments/raw-datasets/2015-11-14-17-06-handwriting_datasets-all-raw.pickle -d ~/GitHub/hwr-experiments/raw-datasets/2015-11-15-filtered-raw.pickle`
+5. Delete files in preprocessing, features and model folder
+6. `$ train.py`: 30 minutes (eventually multiple times for SLP)
 
 ## Add new symbols
 
 See "update existing classifier", but with modifications:
 
-1. adjust the model files (number of output neurons)
+1. Adjust the model files (number of output neurons)
 2. Adjust the data source (look in hwr-experiments/raw-datasets)
 
 ## After new training
