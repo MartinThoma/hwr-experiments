@@ -3,6 +3,13 @@ hwr-experiments
 
 Experiments for handwriting recognition
 
+
+## Notice
+
+This repository is mainly for internal usage. If you want to get the data,
+please have a view at [write-math.com/data](http://write-math.com/data)
+
+
 ## Update an existing classifier
 
 If you have new data, but don't want to change the classifier (hence: no
