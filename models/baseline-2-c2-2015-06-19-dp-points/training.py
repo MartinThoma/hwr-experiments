@@ -2,11 +2,11 @@
 
 """Train this model with supervised layer-wise pretraining."""
 
+# Core Library
+import json
+import logging
 import os
 import shutil
-import json
-
-import logging
 import sys
 
 logging.basicConfig(
@@ -20,7 +20,9 @@ logging.info("Make model with one hidden layer")
 os.chdir("../baseline-1-c2-2015-06-19-dp-points")
 if not os.path.isfile("model-1.json"):
     os.system("hwrt train")
-shutil.copyfile("model-1.json", "../baseline-2-c2-2015-06-19-dp-points/model-1.json")
+shutil.copyfile(
+    "model-1.json", "../baseline-2-c2-2015-06-19-dp-points/model-1.json"
+)
 os.chdir("../baseline-2-c2-2015-06-19-dp-points")
 
 # Remove last layer

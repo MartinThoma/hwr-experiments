@@ -2,11 +2,11 @@
 
 """Train this model with supervised layer-wise pretraining."""
 
+# Core Library
+import json
+import logging
 import os
 import shutil
-import json
-
-import logging
 import sys
 
 logging.basicConfig(

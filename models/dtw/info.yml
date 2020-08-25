@@ -1,4 +1,4 @@
 data-source: feature-files/baseline
-training: 
+training:
 model:
     type: dtw

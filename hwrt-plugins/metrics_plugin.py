@@ -1,17 +1,13 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
+# Core Library
 import time
 from collections import defaultdict
 
+# Third party
 # hwrt modules
-from hwrt import handwritten_data
-from hwrt import utils
-from hwrt import data_analyzation_metrics
-from hwrt import geometry
+from hwrt import data_analyzation_metrics, geometry, utils
 
 
-class TrainingCount(object):
+class TrainingCount:
     """Analyze how many training examples exist for each recording."""
 
     def __init__(self, filename="creator.csv"):
@@ -33,11 +29,13 @@ class TrainingCount(object):
             if i % 100 == 0 and i > 0:
                 utils.print_status(len(raw_datasets), i, start_time)
             print_data[raw_dataset["handwriting"].formula_in_latex] += 1
-        print("\r100%" + "\033[K\n")
+        print("\r100%\033[K\n")
         # Sort the data by highest value, descending
-        print_data = sorted(print_data.items(), key=lambda n: n[1], reverse=True)
+        print_data = sorted(
+            print_data.items(), key=lambda n: n[1], reverse=True
+        )
         # Write data to file
-        write_file.write("total,%i\n" % sum([value for _, value in print_data]))
+        write_file.write("total,%i\n" % sum(value for _, value in print_data))
         for userid, value in print_data:
             write_file.write("%s,%i\n" % (userid, value))
         write_file.close()
@@ -126,13 +124,23 @@ def get_bounding_box_distance(raw_datasets):
             while i < len(bounding_boxes):
                 j = i + 1
                 while j < len(bounding_boxes):
-                    if geometry.do_bb_intersect(bounding_boxes[i], bounding_boxes[j]):
+                    if geometry.do_bb_intersect(
+                        bounding_boxes[i], bounding_boxes[j]
+                    ):
                         got_change = True
                         new_bounding_boxes = []
-                        p1x = min(bounding_boxes[i].p1.x, bounding_boxes[j].p1.x)
-                        p1y = min(bounding_boxes[i].p1.y, bounding_boxes[j].p1.y)
-                        p2x = max(bounding_boxes[i].p2.x, bounding_boxes[j].p2.x)
-                        p2y = max(bounding_boxes[i].p2.y, bounding_boxes[j].p2.y)
+                        p1x = min(
+                            bounding_boxes[i].p1.x, bounding_boxes[j].p1.x
+                        )
+                        p1y = min(
+                            bounding_boxes[i].p1.y, bounding_boxes[j].p1.y
+                        )
+                        p2x = max(
+                            bounding_boxes[i].p2.x, bounding_boxes[j].p2.x
+                        )
+                        p2y = max(
+                            bounding_boxes[i].p2.y, bounding_boxes[j].p2.y
+                        )
                         p1 = geometry.Point(p1x, p1y)
                         p2 = geometry.Point(p2x, p2y)
                         new_bounding_boxes.append(geometry.BoundingBox(p1, p2))
@@ -161,38 +169,17 @@ def get_bounding_box_distance(raw_datasets):
                     dist_tmp.append(_get_bb_distance(bb, bb2))
                 bb_dist.append(min(dist_tmp))
             bb_dist = max(bb_dist)
-            dim = max([bb.get_largest_dimension() for bb in bounding_boxes])
+            dim = max(bb.get_largest_dimension() for bb in bounding_boxes)
             if bb_dist > 1.5 * dim:
-                # bounding_box_h = raw_dataset['handwriting'].get_bounding_box()
-                # bbsize = (bounding_box_h['maxx'] - bounding_box_h['minx']) * \
-                #          (bounding_box_h['maxy'] - bounding_box_h['miny'])
                 if (
                     raw_dataset["handwriting"].formula_id
                     not in [635, 636, 936, 992, 260, 941, 934, 184]
                     and raw_dataset["handwriting"].wild_point_count == 0
                     and raw_dataset["handwriting"].missing_stroke == 0
                 ):
-                    # logging.debug("bb_dist: %0.2f" % bb_dist)
-                    # logging.debug("dim: %0.2f" % dim)
-                    # for bb in bounding_boxes:
-                    #     print(bb)
-                    #     print("width: %0.2f" % bb.get_width())
-                    #     print("height: %0.2f" % bb.get_height())
-                    #     print("maxdim: %0.2f" % bb.get_largest_dimension())
-                    # bb_dist = []
-                    # for k, bb in enumerate(bounding_boxes):
-                    #     dist_tmp = []
-                    #     for j, bb2 in enumerate(bounding_boxes):
-                    #         if k == j:
-                    #             continue
-                    #         dist_tmp.append(_get_bb_distance(bb, bb2))
-                    #     print(dist_tmp)
-                    #     bb_dist.append(min(dist_tmp))
-                    # raw_dataset['handwriting'].show()
-                    # exit()
                     url_base = "http://www.martin-thoma.de/write-math/view"
                     bbfile.write(
                         "<a href='%s/?raw_data_id=%i'>a</a>\n"
                         % (url_base, raw_dataset["handwriting"].raw_data_id)
                     )
-    print("\r100%" + "\033[K\n")
+    print("\r100%\033[K\n")
