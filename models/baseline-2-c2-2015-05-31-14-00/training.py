@@ -9,9 +9,11 @@ import json
 import logging
 import sys
 
-logging.basicConfig(format='%(asctime)s %(levelname)s %(message)s',
-                    level=logging.DEBUG,
-                    stream=sys.stdout)
+logging.basicConfig(
+    format="%(asctime)s %(levelname)s %(message)s",
+    level=logging.DEBUG,
+    stream=sys.stdout,
+)
 
 # Make model with one hidden layer
 logging.info("Make model with one hidden layer")
@@ -25,7 +27,7 @@ os.chdir("../baseline-2-c2-2015-05-31-14-00")
 logging.info("Remove last layer")
 with open("model-1.json") as f:
     model = json.load(f)
-model['layers'].pop()
+model["layers"].pop()
 with open("model-1.json", "w") as f:
     json.dump(model, f)
 
